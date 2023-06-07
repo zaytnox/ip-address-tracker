@@ -6,12 +6,12 @@ import { updateDataInTheDOM } from './updateDataInTheDOM';
 
 export const updateDOMByDomain = async ({
   map,
-  _domain,
+  domain,
 }: {
   map: Leaflet.Map;
-  _domain?: string;
+  domain?: string;
 }) => {
-  const data = await getDataFromApi({ domain: _domain });
+  const data = await getDataFromApi({ domain });
   const {
     location: { lat, lng, city, postalCode, region, timezone },
     ip,
