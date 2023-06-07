@@ -29,6 +29,7 @@ a {
   border: none;
   outline: none;
   background: transparent;
+  cursor: pointer;
 }
 
 ul,
@@ -71,6 +72,9 @@ li {
 .search button {
   padding: 20px 24px;
   background-color: var(--black);
+}
+.search button:hover {
+  background-color: var(--very-dark-gray);
 }
 
 .text {
